@@ -14,5 +14,11 @@ const getUser = callback => {
     lastName: "Doe",
     guess: Math.round(Math.random())
   };
+
   callback(user);
 };
+
+getUser(function(el){ coinToss(el.guess, console.log)})
+
+
+

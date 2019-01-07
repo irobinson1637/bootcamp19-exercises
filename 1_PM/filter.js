@@ -4,13 +4,20 @@
 const arr = [7, 8, 15, 14, 13, 70, 44, 35, 88, 77, false, "7", "hi", null];
 
 const multOf7 = el => {
-  // TODO
+  return el % 7 === 0;
 };
 
 Array.prototype.filter = function(fun) {
-  // TODO
+  let newArray = [];
+  this.forEach( elem => { 
+    if (fun(elem)){
+      newArray.push(elem);
+    }
+  });
+  
+  return newArray;
 };
 
 const newArr = arr.filter(multOf7);
 
-console.log(newArr);
+console.log(arr.filter(multOf7));

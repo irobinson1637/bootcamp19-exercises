@@ -9,16 +9,19 @@
 // - modify so that it prints 1, 2, 2 in that order. Console.logs must stay in place.
 
 function x() {
-  var a;
   console.log(a);
 }
 
 function y() {
-  var a = 2;
   console.log(a);
   x();
 }
 
-var a = 1;
+let a = 1;
 console.log(a);
+a = 2;
 y();
+
+
+//Part 1, undefined will print since the variable hasn't been defined
+//nothing line 5 is a comment
