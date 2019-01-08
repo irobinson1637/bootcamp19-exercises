@@ -5,7 +5,7 @@ const arr = [7, 8, 15, 14, 13, 70, 44, 35, 88, 77, false, "7", "hi", null];
 
 const multOf7 = el => {
   return el % 7 === 0;
-};
+}; // const multOf8 = e1 => !(el %7) && typeof el ==='number';
 
 Array.prototype.filter = function(fun) {
   let newArray = [];
