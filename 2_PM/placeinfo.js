@@ -2,3 +2,7 @@
 / returns the following string, formatted with the appropriate values:
 
 'INPUTTED_PLACE is located at coordinates RETURNED_COORDINATES, at the address RETURNED_ADDRESS.' */
+const apiCall = require('./google_api');
+
+const lookup = process.argv[2];
+apiCall.apiCall(lookup);
