@@ -1,0 +1,4 @@
+Have a todo component that has prop of array that contains objects that look like: todo1 = {name: //todo name, id = //todo id}. Also have a deletes prop of the same component, with deletes being an array of unique ids. 
+To add a todo just set the state of the todo component to a new state by pushing a new element to the end of the array (do the same to the deletes arary)
+To search for todos use filtering to return all elements that begin with substring that is typed in the search bar
+Lastly, to delete, get the id of the delete button that was clicked, remove that delete element from the deletes prop and also remove that element from the todos array.
